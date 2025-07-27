@@ -1,17 +1,14 @@
 # 🧠 Blind Assistant – Core Engine API Documentation
 
-This document describes the core functions of the assistant's intelligence layer: visual captioning and text-to-speech.
+This document outlines the core reusable functions powering the system.
 
 ---
 
-## 📷 `get_caption(image)`
+## 📷 get_caption(image)
 
 ### Purpose:
-Generate a scene description from an image using a vision-language model (BLIP).
+Extract a descriptive caption from a given image using BLIP.
 
-### File:
-`core/vision_captioning.py`
-
-### Signature:
+### Usage:
 ```python
-get_caption(image: PIL.Image.Image) -> str
+caption = get_caption("demo/test_images/park.jpg")
